@@ -15,10 +15,10 @@ body {
     background-image: url(imagens/background.png);
     display: block;
 }
-
-li {
-    display: inline-block;
-    
+.meu-nome {
+    position: absolute;
+    top: 50%;
+    left: 20%;
 }
 
 
