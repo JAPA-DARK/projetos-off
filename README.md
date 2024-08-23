@@ -1,2 +1,2 @@
 # projetos-off
- projetos que eu criei mas não quero deixar no meu git hub para todos vê
+ projetos que eu criei mas não estão em uso ou simplesmente só usei pra teste vão ficar off
