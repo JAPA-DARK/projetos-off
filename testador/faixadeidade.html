@@ -38,18 +38,18 @@
             var txti = window.document.querySelector('input#txtidade')
             var res = window.document.querySelector('div#res')
             var faixa = (txti.value)
-            res.innerHTML = `<p>voce tem <strong>${faixa}</strong> anos de idade</p>`
+            res.innerHTML = `<p>você tem <strong>${faixa}</strong> anos de idade</p>`
             if (faixa < 13 ) {
-                res.innerHTML += ('<p>se sua faixa etária esta entre 0 - 13 voce é <strong>infantil</strong></p>')
+                res.innerHTML += ('<p>se sua faixa etária esta entre 0 - 13 você é <strong>infantil</strong></p>')
             }
             if (faixa  < 18  ) {
-                res.innerHTML += ('<p>se sua faixa etária esta entre 14 - 17 voce é <strong>adolescente</strong></p>')
+                res.innerHTML += ('<p>se sua faixa etária esta entre 14 - 17 você é <strong>adolescente</strong></p>')
             }
             if (faixa < 65) {
-                res.innerHTML += ('<p>se sua faixa etária for esta entre 18 - 64 voce é <strong>adulto</strong></p>')
+                res.innerHTML += ('<p>se sua faixa etária for esta entre 18 - 64 você é <strong>adulto</strong></p>')
             }
             if (faixa > 64) {
-                res.innerHTML += ('<p>sua faixa etária é superior  a 65 voce é <strong>um idoso</strong></p> parabéns tem vivido bastante')
+                res.innerHTML += ('<p>sua faixa etária é superior  a 65 você é <strong>um idoso</strong></p> parabéns tem vivido bastante')
         }
     }
     </script>
