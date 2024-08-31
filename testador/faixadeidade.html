@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qual a sua faixa etária </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            background-color: rgb(66, 66, 66);
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Qual é sua faixa etária</h1>
+    <p>digite sua idade</p>
+    <input type="text" name="txtidade" id="txtidade" placeholder="idade">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">resultado</div>
+    <script>
+        function calcular() {
+
+            var txti = window.document.querySelector('input#txtidade')
+            var res = window.document.querySelector('div#res')
+            var faixa = (txti.value)
+            res.innerHTML = `<p>voce tem <strong>${faixa}</strong> anos de idade</p>`
+            if (faixa < 13 ) {
+                res.innerHTML += ('<p>se sua faixa etária esta entre 0 - 13 voce é <strong>infantil</strong></p>')
+            }
+            if (faixa  < 18  ) {
+                res.innerHTML += ('<p>se sua faixa etária esta entre 14 - 17 voce é <strong>adolescente</strong></p>')
+            }
+            if (faixa < 65) {
+                res.innerHTML += ('<p>se sua faixa etária for esta entre 18 - 64 voce é <strong>adulto</strong></p>')
+            }
+            if (faixa > 64) {
+                res.innerHTML += ('<p>sua faixa etária é superior  a 65 voce é <strong>um idoso</strong></p> parabéns tem vivido bastante')
+        }
+    }
+    </script>
+</body>
+
+</html>
