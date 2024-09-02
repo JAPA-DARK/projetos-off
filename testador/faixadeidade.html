@@ -23,6 +23,21 @@
             font-weight: bolder;
 
         }
+        input#verificar {
+            margin-top: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(241, 18, 18);
+            color: aliceblue;
+            padding: 10px;
+            border: 2px solid rgb(243, 243, 243);
+            border-radius: 3px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        input#verificar:hover {
+            background-color: rgb(36, 34, 34)
+        }
+
     </style>
 </head>
 
@@ -30,7 +45,7 @@
     <h1>Qual é sua faixa etária</h1>
     <p>digite sua idade</p>
     <input type="text" name="txtidade" id="txtidade" placeholder="idade">
-    <input type="button" value="verificar" onclick="calcular()">
+    <input type="button" value="verificar" onclick="calcular()" id="verificar">
     <div id="res">resultado</div>
     <script>
         function calcular() {
@@ -40,18 +55,22 @@
             var faixa = (txti.value)
             res.innerHTML = `<p>você tem <strong>${faixa}</strong> anos de idade</p>`
             if (faixa < 13 ) {
-                res.innerHTML += ('<p>se sua faixa etária esta entre 0 - 13 você é <strong>infantil</strong></p>')
+                res.innerHTML += ('<p> sua faixa de idade é <strong>infantil</strong></p>')
             }
-            if (faixa  < 18  ) {
-                res.innerHTML += ('<p>se sua faixa etária esta entre 14 - 17 você é <strong>adolescente</strong></p>')
+            else if (faixa  < 18  ) {
+                res.innerHTML += ('<p>sua faixa de idade é <strong>adolescente</strong></p>')
             }
-            if (faixa < 65) {
-                res.innerHTML += ('<p>se sua faixa etária for esta entre 18 - 64 você é <strong>adulto</strong></p>')
+            else if (faixa <= 64) {
+                res.innerHTML += ('<p>sua faixa de idade é <strong>adulto</strong></p>')
             }
-            if (faixa > 64) {
-                res.innerHTML += ('<p>sua faixa etária é superior  a 65 você é <strong>um idoso</strong></p> parabéns tem vivido bastante')
+            else if (faixa <=99) {
+                res.innerHTML += ('<p>sua faixa etária é superior  a 65 anos você é <strong>um idoso</strong></p> parabéns tem vivido bastante')
+
+            } else if (faixa >= 100 ) {
+                res.innerHTML += ('olá vejo que você tem experiência de um século de vida fico muito feliz por você ter chegado até esse nivel, gostaria muito de ter uma conversa com uma pessoa tão sábia e experiente como você, sei la tomar um café e falar sobre a vida tenha um excelente dia senhor(a)</p>')
+           
+            }
         }
-    }
     </script>
 </body>
 
