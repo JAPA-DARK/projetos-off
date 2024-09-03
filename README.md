@@ -5,6 +5,8 @@
 
  FORMULARIO DE DEVs SIMPLES: https://japa-dark.github.io/projetos-off/formulario/index.html
 
+ LANDING PAGE DE BOT PARA SERVIDOR: https://japa-dark.github.io/projetos-off/lading-page/
+
  PORTFOLIOS / 
 
  1 : https://japa-dark.github.io/projetos-off/portfolio/index.html
